@@ -9,12 +9,12 @@ def get_clipboard():
 
     if win32clipboard.IsClipboardFormatAvailable(win32clipboard.CF_DIB):
         Image.open(BytesIO(win32clipboard.GetClipboardData(win32clipboard.CF_DIB))).save(f'{date_time}.png')
-        win32clipboard.CloseClipboard()
 
     else:
         with open(f'{date_time}.txt', 'w') as t:
             t.write(win32clipboard.GetClipboardData())
-            win32clipboard.CloseClipboard()
+            
+    win32clipboard.CloseClipboard()
     
 if __name__=="__main__":
     get_clipboard()

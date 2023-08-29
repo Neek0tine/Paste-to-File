@@ -2,7 +2,7 @@ import os
 import sys
 import winreg as reg
 
-cwd = os.getcwd()
+cwd = os.getcwd() + "\\src\\"
 python_exe = sys.executable
 key_path = r"Directory\\Background\\shell\\Paste2File"
 
