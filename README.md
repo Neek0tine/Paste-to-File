@@ -13,6 +13,16 @@ This program is dependent on these modules:
 
 Which could be installed by using `pip`
 
+1. Download and extract the project into a directory
+2. Running `make_reg.py` will create a shortcut to the program in your right-click context menu.
+3. Running `delete_reg.py` will delete the shortcut from your right-click context menu
+4. Running `paste2file.py` by itself will paste whatever you have on your clipboard last to be saved in current directory.
+
+You can edit the `make_reg.py` file to set which python environment you will use. (the default is global)
+
+The registry will target the extracted project directory by default (portable installation). Make sure to extract the project files somewhere permanent.
+
+Deletion of the `src` directory after `make_reg.py` has been run WILL NOT delete the command from the right-click context menu, but doing so will render the command unusable.
 
 ## End-User License Agreement
 As per the MIT License:
