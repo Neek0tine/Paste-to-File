@@ -1,11 +1,14 @@
 # Paste-To-File
 
 
-<a href="https://github.com/Neek0tine/DataMining2"><img src="https://github.com/Neek0tine/Neek0tine/blob/main/stuff/paste-to-file-banner.gif" alt="Procrastinate" width="1080"/></a><br>
+<a href="https://github.com/Neek0tine/Paste-to-File"><img src="https://github.com/Neek0tine/Neek0tine/blob/main/stuff/paste-to-file-banner.gif" alt="Procrastinate" width="1080"/></a><br>
 
 Paste-To-File is a simple Python programs that lets you paste image or text from your clipboard straight into a file. A roundabout way to achieve similar thing is to firstly paste the content of the clipboard into notepad or paint app if it's an image data and saving it. For extra simplicity, this program adds a new command item to Explorer's right-click context menu to paste clipboard items into the directory the right-click is placed on.
 
 ## Installation
+
+<img src="https://github.com/Neek0tine/Neek0tine/blob/main/stuff/disclaimer.png" alt="BE CAREFUL." width="1080"/>
+
 This program is dependent on these modules:
 - `winreg`
 - `pillow`
