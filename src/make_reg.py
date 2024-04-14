@@ -8,8 +8,8 @@ key_path = r"Directory\\Background\\shell\\Paste2File"
 
 key = reg.CreateKeyEx(reg.HKEY_CLASSES_ROOT, key_path)
 reg.SetValue(key, '', reg.REG_SZ, '&Paste as file')
-reg.SetValueEx(key, 'Icon', 0, reg.REG_SZ, f"{os.getcwd()}\\paste2file.ico")
+reg.SetValueEx(key, 'Icon', 0, reg.REG_SZ, f"{cwd}paste2file.ico")
 
 key1 = reg.CreateKeyEx(key, r"command")
-reg.SetValue(key1, '', reg.REG_SZ, python_exe + " " + f'"{os.getcwd()}\\paste2file.py"')
+reg.SetValue(key1, '', reg.REG_SZ, python_exe + " " + f'"{cwd}paste2file.py"')
 
