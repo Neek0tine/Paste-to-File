@@ -7,25 +7,14 @@ Paste-To-File is a simple Python programs that lets you paste image or text from
 
 ## Installation
 
+Installation is as easy as running the installer which could be downloaded from the <a href=https://github.com/Neek0tine/Paste-to-File/releases/tag/v1.0.0> releases </a> page. <b>Uninstallation can and should be done using Windows uninstaller </b> to not leave any registry files leftovers. If a broken uninstallation has occured and the context menu command still exists after the Program Files (x86)/Paste-to-File directory deletion, you can run `delete_reg.py` directly from the `src` folder to remove it; keep in mind that it requires the `winreg` Python library and administrator privileges.
+
 <img src="https://github.com/Neek0tine/Neek0tine/blob/main/stuff/disclaimer.png" alt="BE CAREFUL." width="1080"/>
 
 This program is dependent on these modules:
 - `winreg`
 - `pillow`
 - `pywin23`
-
-Which could be installed by using `pip`
-
-1. Download and extract the project into a directory
-2. Running `make_reg.py` will create a shortcut to the program in your right-click context menu.
-3. Running `delete_reg.py` will delete the shortcut from your right-click context menu
-4. Running `paste2file.py` by itself will paste whatever you have on your clipboard last to be saved in current directory.
-
-You can edit the `make_reg.py` file to set which python environment you will use. (the default is global)
-
-The registry will target the extracted project directory by default (portable installation). Make sure to extract the project files somewhere permanent.
-
-Deletion of the `src` directory after `make_reg.py` has been run WILL NOT delete the command from the right-click context menu, but doing so will render the command unusable.
 
 ## End-User License Agreement
 As per the MIT License:
